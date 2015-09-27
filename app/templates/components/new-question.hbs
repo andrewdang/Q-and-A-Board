@@ -1,0 +1,20 @@
+{{#if newQuestionForm}}
+  <form class="form-horizontal">
+    <label for="question">Question:</label>
+    {{input class="form-control" value=question id="question"}}
+
+    <label for="question">User:</label>
+    {{input class="form-control" value=user id="user"}}
+
+    <label for="question">Date:</label>
+    {{input class="form-control" value=date id="date"}}
+
+    <label for="details">Details (optional):</label>
+    {{input class="form-control" value=details id="details"}}
+
+    <button class="btn btn-success" {{action 'saveQuestion'}}>Submit</button>
+    <button class="btn btn-danger" {{action 'hideQuestionForm'}}>Cancel</button>
+  </form>
+{{else}}
+  <button class="btn btn-primary" {{action 'showQuestionForm'}}>Ask a Question</button>
+{{/if}}
