@@ -1,6 +1,6 @@
 <div class="listed-question">
   <li>
-    <strong>{{question.question}}</strong><br>
+    <strong class="question-link">{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</strong>   <br>
     <i class="text-muted">asked by {{question.user}} on {{moment-format question.date}}</i><br>
   </li>
 </div>
