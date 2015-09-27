@@ -85,21 +85,24 @@ a:hover {
 
 textarea,
 input[type="text"] {
-  border-radius: 0;
-  border: 1px solid #b5b5b5;
+  border-radius: 0 !important;
+  border: 1px solid #b5b5b5 !important;
 }
 
 .container .button-center {
   text-align: center;
 }
 
-.container .button-center button {
-  font-size: 22px;
-  background-color: #2f9d9a;
+.btn {
   border: none;
 }
 
+.btn-success,
+.container .button-center button {
+  background-color: #2f9d9a;
+}
+
+.btn-success:hover,
 .container .button-center button:hover {
-  transition-duration: 0.4s;
   background-color: #216a68;
 }
