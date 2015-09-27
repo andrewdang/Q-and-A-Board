@@ -1,0 +1,18 @@
+{{#if editQuestionForm}}
+  <form class="form-horizontal">
+    <label for="question">Question:</label>
+    {{input class="form-control" value=question.question id="question"}}
+
+    <label for="question">User:</label>
+    {{input class="form-control" value=question.user id="user"}}
+
+    <label for="details">Details (optional):</label>
+    {{textarea class="form-control" value=question.details id="details"}}
+
+    <button class="btn btn-success" {{action 'updateQuestion'}}>Submit</button>
+    <button class="btn btn-danger" {{action 'hideEditForm'}}>Cancel</button>
+  </form>
+{{else}}
+  <button class="btn btn-warning" {{action 'showEditForm'}}>Edit</button>
+  <button class="btn btn-danger" {{action 'destroyQuestion' question}}>Delete</button>
+{{/if}}

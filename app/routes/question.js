@@ -5,5 +5,12 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       question: this.store.findRecord('question', params.question_id)
     });
+  },
+
+  actions: {
+    destroyQuestion(question) {
+      question.destroyRecord();
+      this.transitionTo('index');
+    }
   }
 });
