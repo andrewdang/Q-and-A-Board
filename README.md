@@ -1,6 +1,6 @@
 # Question & Answers Board
 
-An app for asking and answering questions.
+An app for asking and answering questions. View it on [Heroku](https://warm-forest-3550.herokuapp.com/)
 
 ## Prerequisites
 
