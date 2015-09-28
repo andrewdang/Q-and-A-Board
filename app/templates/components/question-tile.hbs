@@ -1,5 +1,11 @@
 <div class="listed-question">
   <li>
+    <span class="answer-number">
+      <span class="num">{{question.answers.length}}</span>
+      <p class="answers-label">answers</p>
+      <div style="clear: both;"></div>
+    </span>
+
     <strong class="question-link">{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</strong>   <br>
     <i class="text-muted">asked by {{question.user}} {{moment-from-now question.date}}</i><br>
   </li>

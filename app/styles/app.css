@@ -63,9 +63,9 @@ body {
 }
 
 .questions-list li {
-  border-left: 6px solid #dd5656;
+  /*border-left: 6px solid #dd5656;*/
   padding: 10px;
-  padding-left: 20px;
+  padding-left: 0;
   margin: 1.3em 0 1.3em 0;
 }
 
@@ -136,4 +136,20 @@ input[type="text"] {
 
 .answer-list {
   border-bottom: 1px solid #cdcdcd;
+}
+
+.answer-number {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 20px;
+  float: left;
+  height: 50px;
+  background-color: #dd5656;
+  width: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+.answers-label {
+  font-size: 12px;
 }
