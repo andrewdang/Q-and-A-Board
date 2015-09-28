@@ -14,7 +14,7 @@ export default Ember.Component.extend({
 
     saveQuestion() {
       var params = {
-        question: this.get('question'),
+        query: this.get('query'),
         user: this.get('user') ? this.get('user') : 'anonymous',
         date: new Date(),
         details: this.get('details'),

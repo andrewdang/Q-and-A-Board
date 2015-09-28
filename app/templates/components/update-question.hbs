@@ -1,15 +1,17 @@
 {{#if editQuestionForm}}
   <form class="form-horizontal">
-    <label for="question">Question:</label>
-    {{input class="form-control" value=question.question id="question"}}
+    <label for="query">Question:</label>
+    {{input class="form-control" value=query id="query" placeholder=question.query}}
 
     <label for="question">User:</label>
-    {{input class="form-control" value=question.user id="user"}}
+    {{input class="form-control" value=user id="user" placeholder=question.user}}
+
+    {{input type="hidden" class="form-control" value=date id="date" placeholder=question.date}}
 
     <label for="details">Details (optional):</label>
-    {{textarea class="form-control" value=question.details id="details"}}
+    {{textarea class="form-control" value=details id="details" placeholder=question.details}}
 
-    <button class="btn btn-success" {{action 'updateQuestion'}}>Submit</button>
+    <button class="btn btn-success" {{action 'updateQuestion' question}}>Submit</button>
     <button class="btn btn-danger" {{action 'hideEditForm'}}>Cancel</button>
   </form>
 {{else}}
