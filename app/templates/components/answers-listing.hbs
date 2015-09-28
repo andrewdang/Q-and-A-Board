@@ -1,0 +1,10 @@
+<h2>Answers</h2>
+<ul>
+  {{#each answers as |answer|}}
+  <div class="answer-list">
+    <li>
+      <strong>{{answer.user}}:</strong> {{answer.response}}
+    </li>
+  </div>
+  {{/each}}
+</ul>

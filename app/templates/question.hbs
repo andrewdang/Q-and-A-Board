@@ -1,2 +1,12 @@
-{{question-detail question=model.question}}
-{{update-question question=model.question destroyQuestion="destroyQuestion" updateQuestion="updateQuestion"}}
+<div class="q-a-section">
+  {{question-detail question=model.question addAnswer="addAnswer"}}
+  {{update-question question=model.question destroyQuestion="destroyQuestion" updateQuestion="updateQuestion"}}
+</div>
+
+<div class="q-a-section">
+  {{add-answer question=model.question addAnswer="addAnswer"}}
+</div>
+
+<div class="q-a-section">
+  {{answers-listing answers=model.question.answers}}
+</div>

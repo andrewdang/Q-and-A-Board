@@ -1,0 +1,9 @@
+<form class="form-horizontal">
+  <label for="response">Answer:</label>
+  {{textarea class="form-control" value=response id="response"}}
+
+  <label for="user">User (leave blank for anonymous):</label>
+  {{input class="form-control" value=user id="user"}}
+
+  <button class="btn btn-success" {{action 'addAnswer' question}}>Answer</button>
+</form>

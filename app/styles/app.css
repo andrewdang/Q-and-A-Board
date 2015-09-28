@@ -41,7 +41,8 @@ pre {
 }
 
 .navbar {
-    margin-bottom: 0;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 ul {
@@ -95,6 +96,7 @@ input[type="text"] {
 
 .btn {
   border: none;
+  font-size: 16px;
 }
 
 .btn-success,
@@ -105,4 +107,18 @@ input[type="text"] {
 .btn-success:hover,
 .container .button-center button:hover {
   background-color: #216a68;
+}
+
+.q-a-section {
+  border: 5px solid #b5b5b5;
+  padding: 1.5em;
+  margin-top: 10px;
+}
+
+.q-a-section button {
+  font-size: 12px;
+}
+
+.q-a-section h2 {
+  margin-top: 0;
 }
