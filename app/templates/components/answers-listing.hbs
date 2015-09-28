@@ -3,7 +3,8 @@
   {{#each answers as |answer|}}
   <div class="answer-list">
     <li>
-      <strong>{{answer.user}}:</strong> {{answer.response}}
+      <i><strong>{{answer.user}}</strong> answered {{moment-from-now answer.date}}:</i> <br>
+      <span class="actual-answer">{{answer.response}}</span>
     </li>
   </div>
   {{/each}}

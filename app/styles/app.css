@@ -122,3 +122,14 @@ input[type="text"] {
 .q-a-section h2 {
   margin-top: 0;
 }
+
+.answer-list li {
+  border-left: 6px solid #2f9d9a;
+  padding: 0;
+  padding-left: 10px;
+  margin: 0 0 1em 0;
+}
+
+.actual-answer {
+  font-size: 16px;
+}
