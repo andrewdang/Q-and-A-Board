@@ -8,7 +8,7 @@ ul {
 
 .main-logo {
   text-align: center;
-  background-color: #b94646;
+  background-color: #414e5b;
   background-size: cover;
   height: 300;
 }
@@ -64,9 +64,9 @@ body {
 
 .questions-list li {
   /*border-left: 6px solid #dd5656;*/
-  padding: 10px;
+  padding: 5px;
   padding-left: 0;
-  margin: 1.3em 0 1.3em 0;
+  margin: .5em 0 .5em 0;
 }
 
 .question-link {
@@ -148,6 +148,10 @@ input[type="text"] {
   width: 60px;
   color: white;
   font-weight: bold;
+}
+
+.listed-question p { /* prevent word wrapping answer block*/
+  overflow: hidden;
 }
 
 .answers-label {
