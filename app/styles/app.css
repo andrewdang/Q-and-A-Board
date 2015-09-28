@@ -8,7 +8,7 @@ ul {
 
 .main-logo {
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background1.png') no-repeat center center;
+  background-color: #b94646;
   background-size: cover;
   height: 300;
 }
@@ -107,6 +107,7 @@ input[type="text"] {
 .btn-success:hover,
 .container .button-center button:hover {
   background-color: #216a68;
+  transition-duration: 0.3s;
 }
 
 .q-a-section {
@@ -125,11 +126,14 @@ input[type="text"] {
 
 .answer-list li {
   border-left: 6px solid #2f9d9a;
-  padding: 0;
   padding-left: 10px;
-  margin: 0 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 .actual-answer {
   font-size: 16px;
+}
+
+.answer-list {
+  border-bottom: 1px solid #cdcdcd;
 }
