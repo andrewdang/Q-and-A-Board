@@ -2,8 +2,8 @@
   <label for="response">Answer:</label>
   {{textarea class="form-control" value=response id="response"}}
 
-  <label for="user">User (leave blank for anonymous):</label>
-  {{input class="form-control" value=user id="user"}}
+  <label for="user">User:</label>
+  {{input class="form-control" value=user id="user" placeholder="leave blank for anonymous..."}}
 
-  <button class="btn btn-success" {{action 'addAnswer' question}}>Answer</button>
+  <button class="btn btn-custom" {{action 'addAnswer' question}}>Answer</button>
 </form>

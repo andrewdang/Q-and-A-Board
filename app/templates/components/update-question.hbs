@@ -11,7 +11,7 @@
     <label for="details">Details (optional):</label>
     {{textarea class="form-control" value=details id="details" placeholder=question.details}}
 
-    <button class="btn btn-success" {{action 'updateQuestion' question}}>Submit</button>
+    <button class="btn btn-custom" {{action 'updateQuestion' question}}>Submit</button>
     <button class="btn btn-danger" {{action 'hideEditForm'}}>Cancel</button>
   </form>
 {{else}}
